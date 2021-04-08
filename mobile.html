@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+				<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+		<style>
+						h6{display:none;}
+							table.mobile {
+  font-family: Georgia, serif;
+ 
+  border: 3px solid red;
+  background-color: #D4EED1;
+  width: 100%;
+  text-align: left;
+}
+td{border: 1px solid red;padding:10px;}
+	
+							
+							
+													#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#mySearch {
+  width: 100%;
+  border: 1px solid #000000;
+position:sticky;
+top:0;
+}
+							
+				
+div.section{box-shadow:3px 6px 3px #9E9E9E;}
+
+								
+		</style>
+
+<body>
+				<input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search ......" title="Type in a category"><br><br>
+	<ul id="myMenu">			
+ <div class="section">    				
+        								
+        								
+        								
+        								<li><a>
+        										
+        										<h6>Airtel</h6>
+        								
+        							
+        										
+        										
+        										
+        										
+        												
+        								
+        								
+        								
+        								
+        										<table class="mobile">
+<tbody>
+				<th>Airtel</th>
+<tr>
+
+
+<td>Customer Care</td>
+<td>198</td>
+</tr>
+
+
+<tr>
+<td>Main Balance</td>
+<td>*123#</td>
+</tr>
+
+
+<tr>
+<td>Check Phone Number</td>
+<td>*282#</td>
+</tr>
+
+
+<tr>
+<td>New Connection Activation</td>
+<td>59059</td>
+</tr>
+
+
+
+<tr>
+<td>Message Center Number</td>
+<td>+919810051905</td>
+</tr>
+
+</table>
+
+</a></li>
+						
+     </div>   		<br>						
+        								
+        		
+        		
+        		
+        		
+        		
+        		
+        		
+        		<div class="section">
+        								
+        								<li><a>
+        										
+        										
+        								<h6>Idea/Vodafone/Vi</h6>
+        							
+        										
+        										
+        										
+        										
+        												
+        								
+        								
+        								
+        								
+        										<table class="mobile">
+<tbody>
+				<th>Vi</th>
+<tr>
+
+
+<td>Customer Care</td>
+<td>198</td>
+</tr>
+
+
+<tr>
+<td>Main Balance</td>
+<td>*199#</td>
+</tr>
+
+
+<tr>
+<td>Check Phone Number</td>
+<td>*199#</td>
+</tr>
+
+
+<tr>
+<td>New Connection Activation</td>
+<td>59059</td>
+</tr>
+
+
+
+<tr>
+<td>Message Center Number (Idea)</td>
+<td>+919847099996</td>
+</tr>
+
+<tr>
+<td>Message Center Number (Vodafone)</td>
+<td>+919846000040</td>
+</tr>
+
+</table>
+
+</a></li>
+						
+     </div>   		<br>						
+        								
+        		
+        		
+        		
+        		
+        		
+        		<div class="section">
+        								
+        								<li><a>
+        										
+        										
+        								<h6>BSNL</h6>
+        							
+        										
+        										
+        										
+        										
+        												
+        								
+        								
+        								
+      <table class="mobile">
+<tbody>
+				<th>BSNL</th>
+<tr>
+
+
+<td>Customer Care</td>
+<td>1503</td>
+</tr>
+
+
+<tr>
+<td>Main Balance</td>
+<td>*123#</td>
+</tr>
+
+
+<tr>
+<td>Check Phone Number</td>
+<td>*888#</td>
+</tr>
+
+
+<tr>
+<td>New Connection Activation</td>
+<td>1507</td>
+</tr>
+
+
+<tr>
+<td>Data Balance & Offer Details</td>
+<td>*124*2#</td>
+</tr>
+
+
+<tr>
+<td>Message Center Number</td>
+<td>+919442099997</td>
+</tr>
+
+
+
+</table>
+
+</a></li>
+						
+     </div>  <br>						
+        								
+        								
+        
+        
+        
+        
+        
+        
+        
+        
+         		<div class="section">
+        								
+        								<li><a>
+        										
+        										
+        								<h6>Jio</h6>
+        							
+        										
+        										
+        										
+        										
+        												
+        								
+        								
+        								
+      <table class="mobile">
+<tbody>
+				<th>Jio</th>
+<tr>
+
+
+<td>Customer Care</td>
+<td>198</td>
+</tr>
+
+
+<tr>
+<td>Main Balance & Active Plan</td>
+<td>1299</td>
+</tr>
+
+
+<tr>
+<td>Check Phone Number</td>
+<td>1299</td>
+</tr>
+
+
+<tr>
+<td>New Connection Activation</td>
+<td>1977</td>
+</tr>
+
+
+
+
+
+<tr>
+<td>Message Center Number</td>
+<td>+917012075009</td>
+</tr>
+
+
+
+</table>
+
+</a></li>
+						
+     </div>   
+        
+        
+        	
+        		
+        	</ul>			
+        	<script>
+        					function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+        	</script>
+        	
+	
+<br><br><br>
+
+</body>
+</html>
